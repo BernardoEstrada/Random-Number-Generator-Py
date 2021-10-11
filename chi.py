@@ -60,7 +60,7 @@ def chi_squared(
 if __name__ == "__main__":
     ## chi_squared(filename, buckets, width, min, max)
     h0 = 16.9190
-    (table, x2, h0R) = chi_squared("chi_data.txt", h0, 10, 0.1, 0, 1)
+    (table, x2, h0R) = chi_squared("out.txt", h0, 10, 0.1, 0, 1)
     
     print()
     print(table)

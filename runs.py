@@ -57,9 +57,9 @@ def runs_file(fname, h0, decimals=4):
 
 if __name__ == '__main__':
     h0 = 1.96
-    runsRes = runs_file('runs_data.txt', h0, 4)
+    runsRes = runs_file('out.txt', h0, 4)
 
-    printRunsSigns(runsRes['signs'])
+    # printRunsSigns(runsRes['signs'])
     print("Positive runs: " + str(runsRes['runs'][0]))
     print("Negative runs: " + str(runsRes['runs'][1]))
     print("Miu: " + str(runsRes['miu']))

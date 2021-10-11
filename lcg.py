@@ -9,10 +9,10 @@ def gen_LCG(N, x0, a, c, m):
     return R
 
 if __name__ == '__main__':
-    N = 10
-    x0 = 6
-    a = 32
+    N = 1000
+    x0 = 11
+    a = 97
     c = 3
-    m = 80
+    m = 7411
     R = gen_LCG(N, x0, a, c, m)
-    print(R)
+    np.savetxt('out.txt', R)
